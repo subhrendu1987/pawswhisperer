@@ -9,103 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawsWhisperer</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo">PawsWhisperer</div>
-        <nav>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">PawsWhisperer</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" onclick="loadContent('./home.html')">Home</a></li>
+                    <li><a href="#about" onclick="loadContent('./about.html')">About</a></li>
+                    <li><a href="#services" onclick="loadContent('./services.html')">Services</a></li>
+                    <li><a href="#success-stories" onclick="loadContent('./success-stories.html')">Success Stories</a></li>
+                    <li><a href="#blog" onclick="loadContent('./blog.html')">Blog</a></li>
+                    <li><a href="#contact" onclick="loadContent('./contact.html')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Content will be loaded here dynamically -->
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 PawsWhisperer. All rights reserved.</p>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#success-stories">Success Stories</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="loadContent('./home.html')">Home</a></li>
+                <li><a href="#about" onclick="loadContent('./about.html')">About</a></li>
+                <li><a href="#services" onclick="loadContent('./services.html')">Services</a></li>
+                <li><a href="#success-stories" onclick="loadContent('./success-stories.html')">Success Stories</a></li>
+                <li><a href="#blog" onclick="loadContent('./blog.html')">Blog</a></li>
+                <li><a href="#contact" onclick="loadContent('./contact.html')">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </footer>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to PawsWhisperer - Where Every Dog Finds Its Voice</h1>
-            <p>Shaizad Ali Khan, Certified Dog Trainer</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Shaizad Ali Khan</h2>
-        <p>Shaizad Ali Khan is a certified dog trainer with 15 years of experience. Over the years, Shaizad has successfully trained 20 dogs, transforming them into obedient and well-behaved companions. His dedication and passion for dog training have made him a trusted name in the industry.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Puppy Training</li>
-            <li>Basic Obedience Training</li>
-            <li>Advanced Obedience Training</li>
-            <li>Behavioral Modification</li>
-            <li>Customized Training Programs</li>
-        </ul>
-    </section>
-
-    <!-- Success Stories Section -->
-    <section id="success-stories">
-        <h2>Success Stories</h2>
-        <blockquote>
-            "Shaizad transformed our aggressive dog into a gentle giant. We can't thank him enough!" - John D.
-        </blockquote>
-        <h3>Case Study: Max the German Shepherd</h3>
-        <p>Before: Max was a hyperactive dog with no sense of commands.</p>
-        <p>After: With Shaizad's training, Max is now calm, obedient, and follows commands perfectly.</p>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <article>
-            <h3>5 Essential Commands Every Dog Should Know</h3>
-            <p>Content about essential commands...</p>
-        </article>
-        <article>
-            <h3>How to Use Positive Reinforcement in Dog Training</h3>
-            <p>Content about positive reinforcement...</p>
-        </article>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-        <p>Email: info@pawswhisperer.com</p>
-        <p>Phone: +123 456 7890</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 PawsWhisperer. All rights reserved.</p>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#success-stories">Success Stories</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </footer>
-</body>
-</html>
+        <script src="scripts.js"></script>
+    </body>
+    </html>
