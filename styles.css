@@ -14,6 +14,24 @@ header {
     position: relative; /* Keep header position relative */
     z-index: 1000; /* Ensure header is above other content */
 }
+.header-table {
+    margin: 0 auto; /* Center align the table */
+    width: 80%; /* Set width as needed */
+    max-width: 1200px; /* Limit maximum width of the table */
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+}
+
+.header-table th, .header-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.header-table th {
+    background-color: #333;
+    color: #fff;
+}
+
 header-top {
     background-color: #333;
     color: #fff;
@@ -208,4 +226,20 @@ h1 {
 .video-container {
     max-width: 800px; /* Adjust maximum width of the video container */
     margin: 0 auto; /* Center the container horizontally */
+}
+
+.embed-container {
+    position: relative;
+    width: 100%; /* Set width to desired value */
+    max-width: 600px; /* Limit maximum width if needed */
+    margin: 0 auto; /* Center align the container */
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
 }
