@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html style="height:100%">
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<title> 403 Forbidden
-</title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head>
-<body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
-<div style="height:auto; min-height:100%; ">     <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
-        <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">403</h1>
-<h2 style="margin-top:20px;font-size: 30px;">Forbidden
-</h2>
-<p>Access to this resource on the server is denied!</p>
-</div></div><div style="color:#f0f0f0; font-size:12px;margin:auto;padding:0px 30px 0px 30px;position:relative;clear:both;height:100px;margin-top:-101px;background-color:#474747;border-top: 1px solid rgba(0,0,0,0.15);box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;">
-<br>Proudly powered by LiteSpeed Web Server<p>Please be advised that LiteSpeed Technologies Inc. is not a web hosting company and, as such, has no control over content found on this site.</p></div></body></html>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawsWhisperer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">PawsWhisperer</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to PawsWhisperer - Where Every Dog Finds Its Voice</h1>
+            <p>Shaizad Ali Khan, Certified Dog Trainer</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Shaizad Ali Khan</h2>
+        <p>Shaizad Ali Khan is a certified dog trainer with 15 years of experience. Over the years, Shaizad has successfully trained 20 dogs, transforming them into obedient and well-behaved companions. His dedication and passion for dog training have made him a trusted name in the industry.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Puppy Training</li>
+            <li>Basic Obedience Training</li>
+            <li>Advanced Obedience Training</li>
+            <li>Behavioral Modification</li>
+            <li>Customized Training Programs</li>
+        </ul>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+        <blockquote>
+            "Shaizad transformed our aggressive dog into a gentle giant. We can't thank him enough!" - John D.
+        </blockquote>
+        <h3>Case Study: Max the German Shepherd</h3>
+        <p>Before: Max was a hyperactive dog with no sense of commands.</p>
+        <p>After: With Shaizad's training, Max is now calm, obedient, and follows commands perfectly.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>5 Essential Commands Every Dog Should Know</h3>
+            <p>Content about essential commands...</p>
+        </article>
+        <article>
+            <h3>How to Use Positive Reinforcement in Dog Training</h3>
+            <p>Content about positive reinforcement...</p>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p>Email: info@pawswhisperer.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PawsWhisperer. All rights reserved.</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#success-stories">Success Stories</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
