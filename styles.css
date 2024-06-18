@@ -123,3 +123,17 @@ footer ul li a {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
+.logo {
+    display: inline-block; /* Ensures the logo behaves like a block element */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.logo img {
+    max-width: 150px; /* Adjust maximum width of the logo */
+    height: auto; /* Ensures the logo scales proportionally */
+}
+
+.social-links a.img{
+    width: 10px; /* Adjust width and height as needed */
+}
