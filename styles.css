@@ -124,16 +124,47 @@ footer ul li a {
     transition: opacity 0.5s ease;
 }
 
+.header-top {
+    display: flex; /* Use flexbox for the top section */
+    align-items: center; /* Center items vertically */
+}
+
 .logo {
-    display: inline-block; /* Ensures the logo behaves like a block element */
-    margin-right: 20px; /* Adjust margin as needed */
+    margin-right: 10px; /* Adjust margin as needed */
 }
 
 .logo img {
-    max-width: 150px; /* Adjust maximum width of the logo */
+    max-width: 100px; /* Adjust maximum width of the logo */
     height: auto; /* Ensures the logo scales proportionally */
 }
 
-.social-links a.img{
-    width: 10px; /* Adjust width and height as needed */
+h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Scales the image on hover */
+}
+
+
+.social-links {
+    display: inline-block; /* Ensures the social links are inline */
+}
+
+.social-links a {
+    display: inline-block; /* Ensures the <a> tag behaves like a block element */
+    width: 40px; /* Adjust width and height as needed */
+    height: 40px;
+}
+
+.social-links img {
+    display: inline-block; /* Ensures the <img> tag behaves like a block element */
+    width: 100%; /* Ensures the image fills its parent container */
+    height: auto; /* Allows the image to scale proportionally */
+    border-radius: 50%; /* Applies rounded corners to the image (optional) */
+    transition: transform 0.2s ease-in-out; /* Adds a smooth transition effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Scales the image on hover */
 }
