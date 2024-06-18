@@ -1,19 +1,13 @@
-/* Basic CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styling */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -21,16 +15,18 @@ header {
 
 header .logo {
     font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin: 0 10px;
 }
 
 header nav ul li a {
@@ -38,111 +34,28 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Hero Section Styling */
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.hero .btn {
-    padding: 0.5rem 2rem;
-    background: #f4a261;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-/* Section Styling */
-section {
+main {
     padding: 2rem;
-    text-align: center;
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-/* Services Section Styling */
-#services ul {
-    list-style: none;
-}
-
-#services ul li {
-    margin: 0.5rem 0;
-}
-
-/* Success Stories Styling */
-blockquote {
-    font-style: italic;
-    margin: 2rem auto;
-    width: 80%;
-    background: #f4f4f4;
-    padding: 1rem;
-    border-left: 5px solid #333;
-}
-
-/* Contact Section Styling */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin: 1rem 0 0.5rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-form .btn {
-    padding: 0.5rem 2rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* Footer Styling */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 footer ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin: 0 10px;
 }
 
 footer ul li a {
@@ -150,31 +63,21 @@ footer ul li a {
     text-decoration: none;
 }
 
-
-/* Success Stories Section Styling */
+/* Success Stories Page Styling */
 #success-stories {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#success-stories h2, #success-stories h3 {
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .review {
-    background: #fff;
+    background: #f9f9f9;
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.review-header {
+.review .review-header {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -191,22 +94,22 @@ footer ul li a {
     flex: 1;
 }
 
-.reviewer-name {
+.review .reviewer-name {
     font-weight: bold;
     font-size: 1rem;
 }
 
-.review-date {
+.review .review-date {
     color: #777;
     font-size: 0.875rem;
 }
 
-.star-rating {
-    color: #ffd700; /* Gold color for stars */
+.review .star-rating {
+    color: #ffd700;
     font-size: 1rem;
 }
 
-blockquote {
+.review blockquote {
     margin: 0;
     font-style: italic;
     color: #333;
