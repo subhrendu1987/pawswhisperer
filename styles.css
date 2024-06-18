@@ -15,10 +15,13 @@ header {
     z-index: 1000; /* Ensure header is above other content */
 }
 .header-table {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
     margin: 0 auto; /* Center align the table */
-    width: 80%; /* Set width as needed */
+    width: 28%; /* Set width as needed */
     max-width: 1200px; /* Limit maximum width of the table */
-    background-color: #f2f2f2;
     border-collapse: collapse;
 }
 
