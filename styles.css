@@ -67,6 +67,8 @@ header nav ul li a {
 
 main {
     padding: 2rem;
+    text-align: center;
+    max-width: 800px;
 }
 
 footer {
@@ -96,6 +98,9 @@ footer ul li a {
     text-decoration: none;
 }
 
+#about{
+    text-align: left;
+}
 /* Success Stories Page Styling */
 #success-stories {
     max-width: 800px;
