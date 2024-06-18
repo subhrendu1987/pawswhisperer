@@ -11,6 +11,8 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative; /* Keep header position relative */
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 header .logo {
@@ -46,6 +48,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    position: relative; /* Keep header position relative */
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 footer ul {
@@ -167,4 +171,33 @@ h1 {
 
 .social-links img:hover {
     transform: scale(1.1); /* Scales the image on hover */
+}
+
+.trainer-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.trainer-info {
+    text-align: center; /* Center text */
+    margin-right: 20px; /* Adjust spacing */
+}
+
+.trainer-image img {
+    max-width: 20%; /* Ensure image scales within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Rounded image (optional) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow effect */
+}
+
+.success-video {
+    text-align: center; /* Center align content */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.video-container {
+    max-width: 800px; /* Adjust maximum width of the video container */
+    margin: 0 auto; /* Center the container horizontally */
 }
