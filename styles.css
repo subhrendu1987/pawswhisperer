@@ -114,3 +114,12 @@ footer ul li a {
     font-style: italic;
     color: #333;
 }
+
+/* Additional styles for fade transition */
+.fade-transition {
+    display: none;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

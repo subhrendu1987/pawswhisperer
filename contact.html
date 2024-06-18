@@ -1,17 +1,51 @@
-<!-- sections/contact.html -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit" class="btn">Submit</button>
-    </form>
-    <p>Email: info@pawswhisperer.com</p>
-    <p>Phone: +123 456 7890</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PawsWhisperer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+            $(function() {
+                // Load header content
+                $('#header').load('https://subhrendu1987.github.io/pawswhisperer/theme/header.html');
+
+                // Load footer content
+                $('#footer').load('https://subhrendu1987.github.io/pawswhisperer/theme/footer.html');
+            });
+    </script>
+ 
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <header id="header">
+        <!-- Header content will be loaded dynamically -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <p>Email: info@pawswhisperer.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <footer id="footer">
+        <!-- Footer content will be loaded dynamically -->
+    </footer>
+</body>
+</html>

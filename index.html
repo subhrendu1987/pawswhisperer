@@ -13,6 +13,16 @@
 
                 // Load footer content
                 $('#footer').load('https://subhrendu1987.github.io/pawswhisperer/theme/footer.html');
+                // Handle page transitions
+                $('nav ul li a').click(function(e) {
+                        e.preventDefault();
+                        var nextPage = $(this).attr('href');
+                        // Fade out current page
+                        $('.fade-transition').fadeOut(300, function() {
+                        // Load next page content
+                        $(nextPage).fadeIn(300);
+                        });
+                });
             });
     </script>
  
@@ -38,29 +48,5 @@
     <footer id="footer">
         <!-- Footer content will be loaded dynamically -->
     </footer>
-
-    <!--script src="scripts.js"></script-->
-    <!--script>
-        // Function to fetch and inject header and footer content
-        async function fetchHeaderAndFooter() {
-            try {
-                const headerResponse = await fetch('theme/header.html');
-                alert("fetch success");
-                const headerHtml = await headerResponse.text();
-                alert("Header response success");
-                document.getElementById('header').innerHTML = headerHtml;
-
-                const footerResponse = await fetch('theme/footer.html');
-                const footerHtml = await footerResponse.text();
-                document.getElementById('footer').innerHTML = footerHtml;
-            } catch (error) {
-                alert("error fetching");
-                console.error('Error fetching header and footer:', error);
-            }
-        }
-
-        // Call fetchHeaderAndFooter when the page loads
-        window.onload = fetchHeaderAndFooter;
-    </script-->
 </body>
 </html>
